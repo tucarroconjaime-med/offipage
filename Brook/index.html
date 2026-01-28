@@ -1,137 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>TU CARRO CON JAIME | BROKER AUTOMOTRIZ</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Iconos de FontAwesome para que se vea el logo de WhatsApp -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="" crossorigin="anonymous">
 </head>
 <body>
 
-    <!-- BARRA NARANJA DELGADA -->
-    <nav class="barra-naranja">
-        <div class="logo">TU CARRO CON <span>JAIME</span></div>
+    <nav class="barra-naranja" role="navigation" aria-label="Barra superior">
+        <div class="logo" aria-hidden="true">TU CARRO CON <span>JAIME</span></div>
         <div class="menu-derecha">
-            <a href="https://wa.me/3104658540" target="_blank">CONTACTO EXPERTO</a>
+            <a href="https://wa.me/3104658540" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">CONTACTO EXPERTO</a>
         </div>
     </nav>
 
-    <!-- BANNER PRINCIPAL -->
-    <header class="hero">
-        <div class="contenido-hero">
-            <h1>ASESORÍA AUTOMOTRIZ PREMIUM</h1>
-            <p>TRANSFORMO TUS DUDAS EN DECISIONES SEGURAS</p>
-            <a href="#inventario" class="boton-aguamarina">VER VEHÍCULOS</a>
-        </div>
-    </header>
-
-<!-- SECCIÓN DE PRESENTACIÓN CON GIRO 3D -->
-<section class="seccion-presentacion">
-    <div class="contenedor-tarjetas-bio">
-        
-        <!-- TARJETA 1: ¿QUIÉN ES JAIME? -->
-        <div class="tarjeta-flip">
-            <div class="tarjeta-inner">
-                <!-- Lado Frontal (Texto) -->
-                <div class="tarjeta-front">
-                    <i class="fas fa-user-tie"></i>
-                    <h3>¿QUIÉN ES JAIME?</h3>
-                    <p>Jaime Moncada es tu aliado estratégico en el mundo automotriz, enfocado en transparencia y seguridad.</p>
-                </div>
-                <!-- Lado Posterior (Foto y Mensaje) -->
-                <div class="tarjeta-back">
-                    <img src="images/jaimepc.jpg" alt="Jaime Moncada">
-                    <p>"Mi compromiso es que estrenes con total tranquilidad."</p>
-                </div>
+    <main>
+        <header class="hero" role="banner" aria-label="Banner principal">
+            <div class="contenido-hero">
+                <h1>ASESORÍA AUTOMOTRIZ PREMIUM</h1>
+                <p>TRANSFORMO TUS DUDAS EN DECISIONES SEGURAS</p>
+                <a href="#inventario" class="boton-aguamarina">VER VEHÍCULOS</a>
             </div>
-        </div>
+        </header>
 
-        <!-- TARJETA 2: TRAYECTORIA -->
-        <div class="tarjeta-flip">
-            <div class="tarjeta-inner">
-                <div class="tarjeta-front">
-                    <i class="fas fa-history"></i>
-                    <h3>MI TRAYECTORIA</h3>
-                    <p>Años liderando el mercado colombiano con cientos de entregas y aprobaciones bancarias exitosas.</p>
-                </div>
-                <div class="tarjeta-back">
-                    <img src="images/jaimecarro.jpg" alt="Jaime Moncada Trayectoria">
-                    <p>"Cientos de familias ya confían en mi gestión experta."</p>
-                </div>
-            </div>
-        </div>
+        <section class="seccion-presentacion" aria-labelledby="presentacion-title">
+            <h2 id="presentacion-title" class="sr-only">Presentación - Jaime</h2>
 
-        <!-- TARJETA 3: ASESORÍA -->
-        <div class="tarjeta-flip">
-            <div class="tarjeta-inner">
-                <div class="tarjeta-front">
-                    <i class="fas fa-star"></i>
-                    <h3>ASESORÍA SEGURA</h3>
-                    <p>Garantizo una experiencia sin riesgos, acompañándote en cada trámite legal y bancario.</p>
+            <div class="contenedor-tarjetas-bio">
+                <div class="tarjeta-flip" tabindex="0">
+                    <div class="tarjeta-inner">
+                        <div class="tarjeta-front" aria-hidden="false">
+                            <i class="fas fa-user-tie" aria-hidden="true"></i>
+                            <h3>¿QUIÉN ES JAIME?</h3>
+                            <p>Jaime Moncada es tu aliado estratégico en el mundo automotriz, enfocado en transparencia y seguridad.</p>
+                        </div>
+                        <div class="tarjeta-back">
+                            <img src="imagenes/jaimepc.jpg" alt="Jaime Moncada" loading="lazy" />
+                            <p>"Mi compromiso es que estrenes con total tranquilidad."</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="tarjeta-back">
-                    <img src="images/jaimepibe2.jpg" alt="Jaime Asesoría">
-                    <p>"Transformo procesos complejos en soluciones simples para ti."</p>
-                </div>
-            </div>
-        </div>
 
-    </div>
-<a href="index.html">Ir a Contacto</a>
-</section>
-
-    <!-- SECCIÓN DE CARROS -->
-    <section id="inventario" class="seccion-inventario">
-        <h2 class="titulo">NUESTRO <span>INVENTARIO</span></h2>
-        
-        <div class="grilla-carros">
-            <!-- CARRO 1 -->
-            <div class="tarjeta-carro">
-                <img src="imagenes/byd-plata.jpg" alt="BYD">
-                <div class="detalle-carro">
-                    <h3>BYD SUV ELÉCTRICA</h3>
-                    <p class="precio">$185.000.000 COP</p>
-                    <a href="https://wa.me/3104658540" class="btn-interes">ME INTERESA</a>
+                <div class="tarjeta-flip" tabindex="0">
+                    <div class="tarjeta-inner">
+                        <div class="tarjeta-front">
+                            <i class="fas fa-history" aria-hidden="true"></i>
+                            <h3>MI TRAYECTORIA</h3>
+                            <p>Años liderando el mercado colombiano con cientos de entregas y aprobaciones bancarias exitosas.</p>
+                        </div>
+                        <div class="tarjeta-back">
+                            <img src="imagenes/jaimecarro.jpg" alt="Jaime Moncada Trayectoria" loading="lazy" />
+                            <p>"Cientos de familias ya confían en mi gestión experta."</p>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="tarjeta-flip" tabindex="0">
+                    <div class="tarjeta-inner">
+                        <div class="tarjeta-front">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <h3>ASESORÍA SEGURA</h3>
+                            <p>Garantizo una experiencia sin riesgos, acompañándote en cada trámite legal y bancario.</p>
+                        </div>
+                        <div class="tarjeta-back">
+                            <img src="imagenes/jaimepibe2.jpg" alt="Jaime Asesoría" loading="lazy" />
+                            <p>"Transformo procesos complejos en soluciones simples para ti."</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- CARRO 2 -->
-            <div class="tarjeta-carro">
-                <img src="images/renault-kardian.jpg" alt="Renault">
-                <div class="detalle-carro">
-                    <h3>RENAULT KARDIAN 2024</h3>
-                    <p class="precio">$98.000.000 COP</p>
-                    <a href="https://wa.me/3104658540" class="btn-interes">ME INTERESA</a>
+            <div class="enlace-contacto">
+                <a href="index.html">Ir a Contacto</a>
+            </div>
+        </section>
+
+        <section id="inventario" class="seccion-inventario" aria-labelledby="inventario-title">
+            <h2 id="inventario-title" class="titulo">NUESTRO <span>INVENTARIO</span></h2>
+            <div class="grilla-carros">
+                <article class="tarjeta-carro" aria-labelledby="car1-title">
+                    <img src="imagenes/byd-plata.jpg" alt="BYD SUV eléctrica" loading="lazy" />
+                    <div class="detalle-carro">
+                        <h3 id="car1-title">BYD SUV ELÉCTRICA</h3>
+                        <p class="precio">$185.000.000 COP</p>
+                        <a href="https://wa.me/3104658540" target="_blank" rel="noopener noreferrer" class="btn-interes">ME INTERESA</a>
+                    </div>
+                </article>
+                <article class="tarjeta-carro" aria-labelledby="car2-title">
+                    <img src="imagenes/renault-kardian.jpg" alt="Renault Kardian 2024" loading="lazy" />
+                    <div class="detalle-carro">
+                        <h3 id="car2-title">RENAULT KARDIAN 2024</h3>
+                        <p class="precio">$98.000.000 COP</p>
+                        <a href="https://wa.me/3104658540" target="_blank" rel="noopener noreferrer" class="btn-interes">ME INTERESA</a>
+                    </div>
+                </article>
+                <article class="tarjeta-carro" aria-labelledby="car3-title">
+                    <img src="imagenes/toyota-hilux.jpg" alt="Toyota Hilux 4x4" loading="lazy" />
+                    <div class="detalle-carro">
+                        <h3 id="car3-title">TOYOTA HILUX 4X4</h3>
+                        <p class="precio">$215.000.000 COP</p>
+                        <a href="https://wa.me/3104658540" target="_blank" rel="noopener noreferrer" class="btn-interes">ME INTERESA</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="credito" class="seccion-credito-formulario" aria-labelledby="credito-title">
+            <h2 id="credito-title">¿LISTO PARA TU NUEVO VEHÍCULO?</h2>
+            <div class="tarjeta-accion-credito">
+                <div class="texto-credito">
+                    <p>Completa tu solicitud de crédito ahora mismo.
+                        <strong>Jaime Moncada</strong> procesará tu información de manera segura y profesional.
+                    </p>
+                </div>
+                <div class="boton-credito-contenedor">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4LixrbRNoubYmJx2pVtyvihEgZSo4vW-N_ktBCgfC3x_HjQ/viewform?usp=sharing&ouid=108367632434059953119"
+                       target="_blank" rel="noopener noreferrer" class="btn-formulario-google">
+                       <i class="fab fa-google-drive" aria-hidden="true"></i> INICIAR SOLICITUD DE CRÉDITO
+                    </a>
                 </div>
             </div>
+        </section>
+    </main>
 
-            <!-- CARRO 3 -->
-            <div class="tarjeta-carro">
-                <img src="images/toyota-hilux.jpg" alt="Toyota">
-                <div class="detalle-carro">
-                    <h3>TOYOTA HILUX 4X4</h3>
-                    <p class="precio">$215.000.000 COP</p>
-                    <a href="https://wa.me/3104658540" class="btn-interes">ME INTERESA</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCIÓN DE SOLICITUD DE CRÉDITO --> <section id="credito" class="seccion-credito-formulario"> <div class="tarjeta-accion-credito"> 
-        <div class="texto-credito"> <h2>¿LISTO PARA TU NUEVO VEHÍCULO?</h2> 
-            <p>Completa tu solicitud de crédito ahora mismo. 
-                <strong>Jaime Moncada</strong> procesará tu información de manera segura y profesional.
-            </p> </div> <div class="boton-credito-contenedor"> 
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4LixrbRNoubYmJx2pVtyvihEgZSo4vW-N_ktBCgfC3x_HjQ/viewform?usp=sharing&ouid=108367632434059953119" 
-                target="_blank" class="btn-formulario-google"> <i class="fab fa-google-drive"></i> INICIAR SOLICITUD DE CRÉDITO </a> </div> </div> </section> ```
-
-    <!-- BOTÓN WHATSAPP FLOTANTE -->
-    <a href="https://wa.me/3104658540" class="boton-whatsapp-fijo" target="_blank">
-        <i class="fab fa-whatsapp"></i> HABLAR CON JAIME
+    <a href="https://wa.me/3104658540" class="boton-whatsapp-fijo" target="_blank" rel="noopener noreferrer" aria-label="Hablar con Jaime">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i> <span class="whatsapp-text">HABLAR CON JAIME</span>
     </a>
+
+    <script>
+    document.querySelectorAll('.tarjeta-flip').forEach(function(card){
+        card.addEventListener('click', function (e) {
+            if (e.target.closest('a')) return;
+            this.classList.toggle('is-flipped');
+        });
+        card.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.classList.toggle('is-flipped');
+            }
+        });
+    });
+    </script>
 
 </body>
 </html>
-¡TU CARRO CON JAIME!
